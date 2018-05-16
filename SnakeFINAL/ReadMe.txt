@@ -7,7 +7,7 @@ Snake Game created by Philip Johnston
 Description:
 
 Based on the basic snake principle, 
-use the keyboard arrow keys to conrol the snake and collect the food.
+use the keyboard arrow keys to control the snake and collect the food.
 
 
 Files:

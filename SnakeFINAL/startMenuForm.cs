@@ -9,25 +9,23 @@ using System.Windows.Forms;
 
 namespace Snake
 {
-    public partial class startMenu : Form
+    public partial class startMenuForm : Form
     {
-        public startMenu()
+        public startMenuForm()
         {
             InitializeComponent();
         }
-
         private void cmdStart_Click(object sender, EventArgs e)
-        {
             //Loads the SnakeGame form.
-            SnakeGame frm = new SnakeGame();
+        {
+            SnakeGameForm frm = new SnakeGameForm();
             frm.Show();
             
         }
-
         private void cmdScores_Click(object sender, EventArgs e)
-        {
             //loads the high scores form.
-            Scores frm = new Scores();
+        {
+            ScoresForm frm = new ScoresForm();
             frm.Show();
         }
     }

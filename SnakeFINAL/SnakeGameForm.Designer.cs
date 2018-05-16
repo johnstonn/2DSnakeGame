@@ -1,6 +1,6 @@
 ﻿namespace Snake
 {
-    partial class SnakeGame
+    partial class SnakeGameForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.lblGameOver = new System.Windows.Forms.Label();
             this.lblLevel = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.snakeTimer = new System.Windows.Forms.Timer(this.components);
             this.labeltimer = new System.Windows.Forms.Label();
             this.lblinfo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -96,10 +96,10 @@
             this.lblLevel.Size = new System.Drawing.Size(0, 16);
             this.lblLevel.TabIndex = 4;
             // 
-            // timer1
+            // snakeTimer
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.snakeTimer.Interval = 1000;
+            this.snakeTimer.Tick += new System.EventHandler(this.snakeTimer_Tick);
             // 
             // labeltimer
             // 
@@ -173,7 +173,7 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Speed Increased to:";
             // 
-            // SnakeGame
+            // SnakeGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,10 +190,10 @@
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbCanvas);
-            this.Name = "SnakeGame";
+            this.Name = "SnakeGameForm";
             this.Text = "SnakeGame";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SnakeGameForm_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.SnakeGameForm_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -209,7 +209,7 @@
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Label lblGameOver;
         private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer snakeTimer;
         private System.Windows.Forms.Label labeltimer;
         private System.Windows.Forms.Label lblinfo;
         private System.Windows.Forms.Label label2;

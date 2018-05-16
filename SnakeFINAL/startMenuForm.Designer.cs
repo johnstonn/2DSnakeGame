@@ -1,6 +1,6 @@
 ﻿namespace Snake
 {
-    partial class startMenu
+    partial class startMenuForm
     {
         /// <summary>
         /// Required designer variable.

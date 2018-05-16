@@ -1,6 +1,6 @@
 ﻿namespace Snake
 {
-    partial class Scores
+    partial class ScoresForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstHighScores = new System.Windows.Forms.ListBox();
             this.cmdClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lstHighScores
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(44, 60);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(313, 276);
-            this.listBox1.TabIndex = 0;
+            this.lstHighScores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstHighScores.FormattingEnabled = true;
+            this.lstHighScores.ItemHeight = 16;
+            this.lstHighScores.Location = new System.Drawing.Point(44, 60);
+            this.lstHighScores.Name = "lstHighScores";
+            this.lstHighScores.Size = new System.Drawing.Size(313, 276);
+            this.lstHighScores.TabIndex = 0;
             // 
             // cmdClose
             // 
@@ -70,10 +70,10 @@
             this.ClientSize = new System.Drawing.Size(546, 362);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdClose);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstHighScores);
             this.Name = "Scores";
             this.Text = "HighScores";
-            this.Load += new System.EventHandler(this.Form3_Load);
+            this.Load += new System.EventHandler(this.ScoresForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,7 +81,7 @@
 
         #endregion
         private System.Windows.Forms.Button cmdClose;
-        public System.Windows.Forms.ListBox listBox1;
+        public System.Windows.Forms.ListBox lstHighScores;
         private System.Windows.Forms.Label label1;
     }
 }

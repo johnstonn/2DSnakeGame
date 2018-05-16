@@ -46,36 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="Death.cs" />
-    <Compile Include="SnakeGame.cs">
+    <Compile Include="Location.cs" />
+    <Compile Include="ErrorCheck.cs" />
+    <Compile Include="SnakeGameForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SnakeGame.Designer.cs">
-      <DependentUpon>SnakeGame.cs</DependentUpon>
+    <Compile Include="SnakeGameForm.Designer.cs">
+      <DependentUpon>SnakeGameForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Scores.cs">
+    <Compile Include="ScoresForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Scores.Designer.cs">
-      <DependentUpon>Scores.cs</DependentUpon>
+    <Compile Include="ScoresForm.Designer.cs">
+      <DependentUpon>ScoresForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Input.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="SortReadWrite.cs" />
-    <Compile Include="startMenu.cs">
+    <Compile Include="SortFunction.cs" />
+    <Compile Include="ReadWriteFunction.cs" />
+    <Compile Include="startMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="startMenu.Designer.cs">
-      <DependentUpon>startMenu.cs</DependentUpon>
+    <Compile Include="startMenuForm.Designer.cs">
+      <DependentUpon>startMenuForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SnakeGame.resx">
-      <DependentUpon>SnakeGame.cs</DependentUpon>
+    <EmbeddedResource Include="SnakeGameForm.resx">
+      <DependentUpon>SnakeGameForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Scores.resx">
-      <DependentUpon>Scores.cs</DependentUpon>
+    <EmbeddedResource Include="ScoresForm.resx">
+      <DependentUpon>ScoresForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,8 +88,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="startMenu.resx">
-      <DependentUpon>startMenu.cs</DependentUpon>
+    <EmbeddedResource Include="startMenuForm.resx">
+      <DependentUpon>startMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
